@@ -22,6 +22,7 @@ abstract class RTCPeerConnection {
   Function(RTCIceGatheringState state)? onIceGatheringState;
   Function(RTCIceConnectionState state)? onIceConnectionState;
   Function(RTCIceCandidate candidate)? onIceCandidate;
+  Function(List<RTCIceCandidate> candidates)? onIceCandidatesRemoved;
   Function(MediaStream stream)? onAddStream;
   Function(MediaStream stream)? onRemoveStream;
   Function(MediaStream stream, MediaStreamTrack track)? onAddTrack;
